@@ -1,3 +1,10 @@
+:root{
+ --veryDarkBlue: hsl(212, 21%, 14%); 
+ --DarkGreyihBlue: hsl(228, 12%, 48%);
+ --White: hsl(0, 0%, 100%);
+ --verde: #328f6d;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -7,6 +14,7 @@ body{
     font size (paragraph): 14px;
 }
 
+
 .card_container{
     width: 100%;
     height: 100vh;
@@ -15,12 +23,68 @@ body{
     align-items: center;
 }
 .card{
-    width: 360px;
+    width: 350px;
     height: auto;
     background-color: #fff;
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
 }
+.card_image img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.card_description{
+    padding: 0px 20px 20px 20px;
+}
+.encabezado h2{
+    font-size: 15px;
+    font-weight: 200;
+    letter-spacing: 0.25em;
+    color: var(--DarkGreyihBlue);
+}
+.titulo{
+    font-family: 'Fraunces';
+    color: var(--veryDarkBlue);
+    line-height: 34px;
+}
+.card_description{
+    font-size: 15px;
+    color: var(--DarkGreyihBlue);
+}
+.prices{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+}
+.price_one{
+    font-family: 'Fraunces', 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--verde);
+}
+.price_two{
+    padding-left: 30px;
+    text-decoration: line-through;
+}
+.button_card{
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    background-color: var(--verde);
+    color: var(--White);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.button_card img{
+    height: 20px;
+    align-self: center;
+}
+.button_card p{
+    align-self: center;
+}
+
 @media (min-width:500px){
     .card{
         flex-direction: row;
